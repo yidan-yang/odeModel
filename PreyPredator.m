@@ -12,7 +12,7 @@ c = 0.1*b; % predator growth rate(hunt rate)
 d = 0.5*a; % predator death rate (prey is the only food source for predator) 
 
 % ICs = [30 4];
-ICs = [30 20];
+ICs = [30 10];
 
 finaltime = 100; % 100 days
 t = 0:1:finaltime; % time range, time interval = 1 day
