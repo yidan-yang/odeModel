@@ -11,7 +11,8 @@ b = 0.1; % prey death rate when it encountered predator
 c = 0.1*b; % predator growth rate(hunt rate)
 d = 0.5*a; % predator death rate (prey is the only food source for predator) 
 
-ICs = [30 4];
+% ICs = [30 4];
+ICs = [30 20];
 
 finaltime = 100; % 100 days
 t = 0:1:finaltime; % time range, time interval = 1 day
@@ -25,7 +26,7 @@ hold on;
 plot(t,X(:,2), 'blue', 'LineWidth', 1.4)
 xlabel('time(day)');
 ylabel('population');
-legend('x_1(t)','x_2(t)')
+legend('Prey','Predator')
 title('Prey and Predator Model')
 hold off;
 
